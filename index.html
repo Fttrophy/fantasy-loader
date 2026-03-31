@@ -12,24 +12,34 @@ body {
 }
 
 img {
-  width: 180px;
-  animation: fadeIn 2s ease-in-out;
+  width: 320px; /* BIGGER LOGO */
+  animation: cinematicZoom 3.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8);}
-  to { opacity: 1; transform: scale(1);}
+@keyframes cinematicZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 </style>
 </head>
 
 <body>
-  <img src="https://drive.google.com/uc?export=view&id=18h-4jOcqiT5k048UyPq1YBEGPhQ1qpSj">
+  <img src="https://drive.google.com/thumbnail?id=18h-4jOcqiT5k048UyPq1YBEGPhQ1qpSj&sz=w1000">
   
   <script>
     setTimeout(function(){
       window.location.href = "https://sites.google.com/view/fantasytrophy";
-    }, 2500);
+    }, 4000); /* LONGER TIME */
   </script>
 </body>
 </html>
