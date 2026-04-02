@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+<body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+<img src="https://lh3.googleusercontent.com/d/1_FV6k1gHtjhJRWzJcWfO8ZqHdMYvF8lh" 
+style="width:220px; animation:zoom 3s ease-in-out;">
+
+<script>
+setTimeout(() => {
+  window.location.href = "https://sites.google.com/view/fantasytrophy";
+}, 3500);
+</script>
+
 <style>
-body {
-  margin: 0;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-img {
-  width: 320px; /* BIGGER LOGO */
-  animation: cinematicZoom 3.5s ease-in-out;
-}
-
-@keyframes cinematicZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+@keyframes zoom {
+  from {opacity:0; transform:scale(0.7);}
+  to {opacity:1; transform:scale(1);}
 }
 </style>
-</head>
 
-<body>
-  <img src="https://drive.google.com/thumbnail?id=18h-4jOcqiT5k048UyPq1YBEGPhQ1qpSj&sz=w1000">
-  
-  <script>
-    setTimeout(function(){
-      window.location.href = "https://sites.google.com/view/fantasytrophy";
-    }, 4000); /* LONGER TIME */
-  </script>
 </body>
 </html>
